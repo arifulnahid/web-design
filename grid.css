@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40px repeat(2, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: aquamarine;
+  height: 40px;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.main {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  width: 100%;
+  background-color: beige;
+  height: 100vh;
+}
+.footer {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  height: 40px;
+  background-color: antiquewhite;
+}

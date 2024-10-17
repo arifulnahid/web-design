@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li>
+          <a href="#">LEDS</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+        <li>
+          <a href="#">Settings</a>
+        </li>
+        <li>
+          <a href="#">More</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      const menu = document.getElementById("menu");
+
+      menu.addEventListener("click", (e) => {
+        if (e.target.tagName == "A") {
+          const active = document.querySelectorAll(".active");
+          active.forEach((el) => {
+            el.classList.remove("active");
+          });
+
+          e.target.classList.toggle("active");
+        }
+      });
+    </script>
+  </body>
+</html>

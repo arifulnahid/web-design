@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-container div {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(114, 177, 233);
+}
+
+.item-2 {
+  flex-basis: 50%;
+}
+
+.item-7 {
+  flex: 1 1 0;
+}
